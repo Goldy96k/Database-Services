@@ -1,0 +1,14 @@
+# Module 7: Redshift Assignment
+
+## Problem Statement:
+XYZ Corporation’s application requires a database service that can store and retrieve large volumes of data efficiently. The solution was implemented using **Amazon Redshift**, a fast, fully managed data warehouse that makes it easy and cost-effective to analyze all your data using SQL and standard business intelligence tools.
+
+## Tasks Performed:
+1. **Created a Redshift Data Warehouse**:
+   - Set up an Amazon Redshift cluster to act as a data warehouse for XYZ Corporation’s application data.
+
+2. **Using the Query Editor**:
+   - **Loaded Data**: Uploaded some data into the Redshift data warehouse using the query editor.
+   - **Queried the Data**: Ran SQL queries to retrieve and analyze the data stored in the Redshift warehouse.
+
+This assignment demonstrates how to create and configure a **Redshift data warehouse**, load data into it, and perform SQL queries to retrieve the data. It highlights the capabilities of Redshift for handling and querying large datasets.
