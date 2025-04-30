@@ -1,0 +1,46 @@
+# Module 7: DynamoDB Assignment
+
+## Problem Statement:
+XYZ Corporation's application requires a NoSQL database service to store data, which can be retrieved as needed. The task is to implement a suitable service for this purpose using Amazon DynamoDB, a fully managed NoSQL database service.
+
+### Tasks Performed:
+1. **Create a DynamoDB Table:**
+   - Created a DynamoDB table with **ID** as the partition key.
+   - The table was configured with the default provisioned capacity.
+
+2. **Add Items to the Table:**
+   - Inserted **5 items** into the DynamoDB table, each with a unique ID.
+
+3. **Backup and Delete the Table:**
+   - Created a **backup** of the DynamoDB table.
+   - Deleted the table after the backup was successful.
+
+---
+
+## Steps to Perform the Task:
+
+1. **Creating a DynamoDB Table:**
+   - Go to AWS DynamoDB Console.
+   - Click on "Create Table."
+   - Set the **Partition Key** as **ID**.
+   - Configure any additional settings (like read/write capacity mode and encryption settings) as needed.
+
+2. **Inserting Items into DynamoDB:**
+   - Once the table is created, navigate to the **Items** section.
+   - Manually add **5 items** to the table, ensuring each item has a unique **ID**.
+
+3. **Backup and Delete the Table:**
+   - To create a backup, go to the **Backups** tab and click on **Create Backup**.
+   - After ensuring the backup is successful, delete the table from the **Table Settings** menu.
+
+---
+
+## Expected Outcome:
+- A DynamoDB table with a partition key as **ID**.
+- **5 items** successfully inserted into the table.
+- A backup of the DynamoDB table was created.
+- The table was deleted after the backup was taken.
+
+---
+
+This assignment demonstrates how to utilize Amazon DynamoDB for a NoSQL database solution, including table creation, data insertion, and table backup & deletion.
