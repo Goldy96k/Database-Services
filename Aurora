@@ -1,0 +1,35 @@
+# Module 7: Aurora Assignment
+
+## 📌 Problem Statement
+You work for XYZ Corporation. Their application requires a SQL service that can store data which can be retrieved when required. Implement a suitable RDS engine using Amazon Aurora for high performance and availability.
+
+---
+
+## ✅ Tasks Performed
+
+1. **Create an AuroraDB Engine RDS Database**  
+   - Navigated to AWS RDS Console  
+   - Chose **Amazon Aurora (MySQL-compatible)** as the engine  
+   - Configured instance class, storage, VPC, and security groups  
+   - Launched the primary Aurora cluster
+
+2. **Create Read Replicas**  
+   - Created **2 Aurora Read Replicas** in different Availability Zones  
+   - Ensured replicas are attached to the primary cluster for automatic replication  
+   - Verified replication status and connectivity
+
+---
+
+## 🛠️ AWS Services Used
+- Amazon Aurora (MySQL-Compatible)  
+- Amazon RDS  
+- VPC, Subnets & Security Groups  
+
+---
+
+## 📈 Outcome
+- A highly available AuroraDB cluster with automated failover  
+- Two read replicas in separate AZs for load distribution and disaster recovery  
+- Improved read performance and resilience of the database layer
+
+---
