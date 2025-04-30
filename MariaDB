@@ -1,0 +1,72 @@
+# MariaDB RDS Assignment
+
+## 📌 Problem Statement
+
+You work for XYZ Corporation. Their application requires a SQL-based relational database service that can store data and allow easy retrieval when required. To fulfill this requirement, you need to implement an RDS (Relational Database Service) engine using **MariaDB**.
+
+---
+
+## ✅ Tasks Performed
+
+### 1️⃣ Create a MariaDB RDS Instance
+- Logged into the AWS Management Console.
+- Navigated to **RDS** service.
+- Selected **MariaDB** as the database engine.
+- Configured the DB instance with:
+  - DB Instance Identifier
+  - Master Username and Password
+  - Instance size (db.t3.micro for free-tier)
+  - Allocated storage
+  - Public accessibility: **Enabled**
+  - VPC Security Group to allow inbound connections on port 3306
+
+### 2️⃣ Connect to MariaDB using Two Methods
+
+#### 🔹 a. SQL Client for Windows (e.g., MySQL Workbench or HeidiSQL)
+- Installed SQL client on a Windows machine.
+- Entered the following:
+  - Endpoint of the RDS instance
+  - Port: 3306
+  - Username and password
+- Successfully connected and executed SQL queries.
+
+#### 🔹 b. Linux Based EC2 Instance
+- Launched an EC2 instance (Amazon Linux 2 or Ubuntu).
+- Installed MariaDB client:
+  - `sudo yum install mariadb -y` (for Amazon Linux)
+- Connected to the RDS:
+  ```bash
+  mysql -h <RDS-ENDPOINT> -u <USERNAME> -p
+  ```
+- Verified the connection and tested SQL commands.
+
+---
+
+## 🛡️ Security Configuration
+
+- Configured the EC2 instance and RDS to be in the same VPC/subnet for better performance and security.
+- Allowed inbound access to the RDS port (3306) only from the EC2 instance's security group and trusted IPs.
+
+---
+
+## 📸 Screenshots
+Add screenshots here for:
+- RDS instance setup
+- SQL client connection
+- EC2 terminal connection
+
+---
+
+## 📚 Learning Outcome
+
+- Understood how to provision a managed SQL database using MariaDB on AWS RDS.
+- Practiced multiple ways to securely connect and interact with the database.
+- Gained confidence in configuring security groups and networking for database access.
+
+---
+
+## 🔗 Related Topics
+- Amazon RDS
+- MariaDB
+- SQL Clients
+- EC2 connectivity
